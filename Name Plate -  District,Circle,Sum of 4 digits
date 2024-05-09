@@ -1,0 +1,37 @@
+str = input()
+state = str[:2]
+if state=='TR':
+    print("State: TRIPURA")
+    flag = 1
+else:
+    print("State: MIZORAM")
+    flag = 0
+namesum = 0
+if flag == 1:
+    switch={
+    0: 'aGARTALA',
+    1: 'aKILSTAR',
+    2: 'Tuesday',
+    3: 'Wednesday',
+    4: 'Thursday',
+    5: 'Friday',
+    6: 'Saturday'
+       }
+else:
+    switch = {
+        0: 'Aozwal',
+        1: 'Lunaglei',
+        2: 'Tuesday',
+        3: 'Wednesday',
+        4: 'Thursday',
+        5: 'Friday',
+        6: 'Saturday'
+    }
+
+for i in range(6,10):
+    namesum += int(str[i])
+print(namesum)
+i = int(str[3:4])
+
+
+print(switch[i])

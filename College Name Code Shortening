@@ -1,0 +1,23 @@
+def name(s):
+    l = s.split()
+    new = ""
+
+    for i in range(len(l)):
+        s = l[i]
+
+        new += (s[0].upper())
+
+    return new
+
+
+# Driver code
+s = input("Enter the college name :")
+capital = s.upper()
+
+word2 = "OF"
+word_list2 = capital.split()
+new_word2 = ' '.join([i for i in word_list2 if i not in word2])
+word3 = "AND"
+word_list3 = new_word2.split()
+new_word3 = ' '.join([i for i in word_list3 if i not in word3])
+print(name(new_word3))
